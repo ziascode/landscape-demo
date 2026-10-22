@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 30 700 650" role="img" aria-label="TongHui">
+  <title>TongHui Landscaping</title>
+  <defs>
+    
+    <!-- everything white in the mark is cut out of the green disc, so the logo works on any background -->
+    <mask id="fav-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="760" height="700">
+      <rect width="760" height="700" fill="#fff"/>
+      <g fill="#000" transform="translate(40 30)">
+        <!-- roof chevron -->
+        <path d="M200 290 L392 88 L590 290 L548 290 L392 132 L240 290 Z"/>
+        <!-- gable + walls -->
+        <path d="M250 442 L250 302 L393 152 L538 302 L538 442 Z"/>
+        <!-- winding path from the door to the edge -->
+        <path d="M322 458 C310 478 316 500 346 516 C392 540 446 556 462 590 L470 720 L760 720 L640 594 C560 552 480 520 416 496 C396 488 394 470 424 456 Z"/>
+        <!-- sprout: stem + two leaves -->
+        <path d="M232 196 C230 186 231 178 236 170" fill="none" stroke="#000" stroke-width="12" stroke-linecap="round"/>
+        <path d="M234 178 C196 180 160 166 146 132 C190 120 226 140 234 178 Z"/>
+        <path d="M240 176 C244 128 286 96 362 94 C352 140 304 172 240 176 Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g mask="url(#fav-cut)">
+    <!-- disc with a small tail at the lower right, as in the original mark -->
+    <g fill="#65B159" transform="translate(40 30)">
+      <path d="M640 600 Q706 476 715 330 A345 305 0 1 0 470 618 Q560 616 640 600 Z"/>
+    </g>
+  </g>
+  <g transform="translate(40 30)">
+    <!-- green details that sit on the white house: arched door and the leaf veins -->
+    <path fill="#65B159" d="M332 336 L338 266 C342 228 368 210 396 210 C424 210 450 228 454 266 L460 336 Z"/>
+    <path d="M352 272 H440" stroke="#fff" stroke-width="7" stroke-dasharray="14 9"/>
+    <path d="M226 172 C200 160 178 148 162 136" fill="none" stroke="#65B159" stroke-width="7" stroke-linecap="round"/>
+    <path d="M250 168 C282 140 314 118 346 104" fill="none" stroke="#65B159" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
